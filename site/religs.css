@@ -1,0 +1,136 @@
+body {
+    background-color: #dcdcdc;
+    padding-top: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.5fr 0.4fr 0.25fr 1.5fr;
+    column-gap: 0;
+}
+.cross {
+    grid-area: 1 / 2 / 1 / 3;
+    width: 200px;
+    height: 200px;
+    place-self: center;
+}
+.moon {
+    grid-area: 1 / 3 / 1 / 4;
+    width: 200px;
+    height: 200px;
+    place-self: center;
+}
+.star {
+    grid-area: 1 / 4 / 1 / 5;
+    width: 200px;
+    height: 200px;
+    place-self: center;
+}
+.box1-1 {
+    text-decoration: none;
+    font-size: 20pt;
+    color: white;
+    place-self: center;
+    grid-area: 2 / 1 / 2 / 3;
+    background-color: dimgray;
+    
+}
+.box1-2 {
+    text-decoration: none;
+    font-size: 20pt;
+    color: white;
+    place-self: center;
+    grid-area: 2 / 2/ 2 / 4;
+    background-color: dimgray;
+    
+}
+.box1-3 {
+    text-decoration: none;
+    font-size: 20pt;
+    color: white;
+    place-self: center;
+    grid-area: 2 / 3 / 2 / 5;
+    background-color: dimgray;
+    
+}
+.box1-4 {
+    text-decoration: none;
+    font-size: 20pt;
+    color: white;
+    place-self: center;
+    grid-area: 2 / 4 / 2 / 6;
+    background-color: dimgray;
+    
+}
+.intro-text {
+    grid-area: 4 / 2 / 6 / 5;
+    font-size: 60pt;
+    align-self: start;
+    justify-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.guide {
+    grid-area: 4 / 1 / 6 / 6;
+    font-size: 50pt;
+    align-self: center;
+    justify-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media  screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 0.5fr 0.4fr 0.25fr 1fr;
+    }
+    .intro-text {
+        font-size: 20pt;
+        grid-area: 4 / 1 / 5 / 8;
+        justify-self: center;
+        align-self: start;
+    }
+    .guide {
+        grid-area: 4 / 2 / 5/ 6;
+        font-size: 15pt;
+        justify-self: center;
+        align-self: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .cross {
+        grid-area: 1 / 2 / 1 / 3;
+        width: 100px;
+        height: 100px;
+        place-self: center;
+    }
+    .moon {
+        grid-area: 1 / 3 / 1 / 5;
+        width: 100px;
+        height: 100px;
+        place-self: center;
+    }
+    .star {
+        grid-area: 1 / 5 / 1 / 6;
+        width: 100px;
+        height: 100px;
+        place-self: center;
+    }
+    .box1-1 {
+        font-size: 11pt;
+        grid-area: 2 / 2 / 2 / 2;
+        place-self: center;
+    }
+    .box1-2 {
+        font-size:11pt;
+        grid-area: 2 / 3 / 2 / 4;
+        place-self: center;
+    }
+    .box1-3 {
+        font-size:11pt;
+        grid-area: 2 / 4 / 2 / 6;
+        place-self: center;
+    }
+    .box1-4 {
+        font-size:11pt;
+        grid-area: 2 / 6 / 2 / 7;
+        place-self: center;
+    }
+}
